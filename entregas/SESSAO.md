@@ -19,13 +19,13 @@ Registro de onde o Projeto Integrador III parou e do que falta. **Entrega: 07/12
 | 2.3 Sistema web | ✅ Login, projetos, tarefas, Kanban, calendário e botão "Carregar dados de exemplo". Testado no navegador |
 | 2.4 Documentação | ✅ `Documentacao-PI-III-Gerenciador-de-Tarefas.pdf` (16 páginas, formato ABNT, com 5 figuras) |
 | 2.4 Repositório Git | ✅ Público |
-| 2.4 Vídeo de ~5 min | ✅ `video/Gerenciador-de-Tarefas-PI-III-B.mp4` (2 min 56 s, gerado em 09/11): gravação do sistema local (cadastro, dados de exemplo, Kanban com arrastar, setas e tarefa nova, calendário) com narração masculina e cartões para o problema, a gestão, os desafios e as melhorias. Falta publicar (YouTube não listado ou Drive) e colocar o link na entrega |
+| 2.4 Vídeo de ~5 min | ✅ `video/Gerenciador-de-Tarefas-PI-III-B.mp4` (2 min 56 s, gerado em 09/11): gravação do sistema local (cadastro, dados de exemplo, Kanban com arrastar, setas e tarefa nova, calendário) com narração masculina e cartões para o problema, a gestão, os desafios e as melhorias. Publicado no Google Drive: https://drive.google.com/file/d/1-Fc9s9U4DtkSP-yeDz8oESijpX1wKpnV/view |
 | 3 Registro da interação com o parceiro | ⏳ Ata em `Ata-Reuniao-TR-Enterprises.pdf`. Assinada pelo aluno em 09/11; **falta a assinatura do Tales** pelo assinador.iti.br |
 
 ## Próximos passos
 
 1. O Tales assinar a ata (a versão já assinada pelo aluno está em `docs/(Para assinatura) Você e o Tales/`). Depois, adicionar o arquivo assinado aqui e passar o cartão da reunião para Done no quadro.
-2. Publicar o vídeo (YouTube não listado ou Drive) e guardar o link.
+2. Vídeo publicado no Google Drive: https://drive.google.com/file/d/1-Fc9s9U4DtkSP-yeDz8oESijpX1wKpnV/view
 3. Links do GitHub: em 09/11 o repositório publicado (`gerenciador-tarefas-cv-adm`) foi renomeado para `pi-3b-gerenciador-de-tarefas` e recebeu a versão com a TR Enterprises; o site no GitHub Pages passou a responder no endereço da documentação. O pacote pronto para a Plataforma A fica em `docs/(Para entregar) Plataforma A - Entrega do PI/` (fora do git).
 4. Validação com a empresa, prevista para 01/12 (na ata e na seção 8 da documentação). Se acontecer, atualizar a seção 8 com o resultado.
 5. Entregar até 07/12: documentação, link do quadro, link do repositório, vídeo e ata assinada.
