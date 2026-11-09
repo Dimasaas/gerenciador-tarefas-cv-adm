@@ -27,6 +27,8 @@ Abra o link do sistema online, ou baixe o repositório e abra o `index.html` no 
 3. Abra o projeto, adicione tarefas e mova-as pelo Kanban.
 4. Acompanhe os prazos na aba Calendário.
 
+**Demonstração rápida:** depois do login, clique em **"Carregar dados de exemplo"**. O sistema cria três projetos baseados em demandas da empresa (cobrança, organização dos sistemas internos e backups), com tarefas em todas as colunas, algumas atrasadas e prazos espalhados pelo calendário. Também cria dois colegas fictícios, `ana@exemplo.com` e `bruno@exemplo.com`, com a senha `demo123`. Os clientes da cobrança (Q12 L08, por exemplo) também são fictícios.
+
 ## Tecnologias
 
 HTML, CSS e JavaScript puros, sem framework e sem etapa de build. Os dados ficam no `localStorage` do navegador.

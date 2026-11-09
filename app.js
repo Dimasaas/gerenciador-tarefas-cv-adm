@@ -77,7 +77,8 @@ function projectsView(u) {
     </div>`;
   }).join('') || '<p class="muted">Nenhum projeto ainda. Crie o primeiro abaixo.</p>';
 
-  return `<h2>Meus projetos</h2>
+  return `<div class="cal-head"><h2>Meus projetos</h2>
+    <button data-action="seed" title="Cria projetos e tarefas de demonstração">Carregar dados de exemplo</button></div>
   <div class="grid">${cards}</div>
   <div class="box">
     <h3>Novo projeto</h3>
@@ -163,6 +164,55 @@ function calendarView(u) {
   </div>`;
 }
 
+// ---------- Dados de exemplo (para demonstração) ----------
+const addDays = n => { const d = new Date(); d.setDate(d.getDate() + n); return iso(d); };
+
+async function seedDemo(u) {
+  const users = db.get('users');
+  const passHash = await hash('demo123');
+  const team = [['Ana Souza (Cobrança)', 'ana@exemplo.com'], ['Bruno Lima (Financeiro)', 'bruno@exemplo.com']]
+    .map(([name, email]) => users.find(x => x.email === email) ?? users[users.push({ id: uid(), name, email, passHash }) - 1]);
+  db.set('users', users);
+  const [ana, bruno] = team.map(x => x.id), eu = u.id;
+
+  // [nome, descrição, prazo (dias a partir de hoje), membros, tarefas: [título, responsável, prazo, status]]
+  const demo = [
+    ['Cobrança — Village Campos Verdes (dezembro)', 'Acompanhamento dos clientes em atraso: retornos, promessas de pagamento e encaminhamentos.', 25, [eu, ana, bruno], [
+      ['Retornar cliente Q12 L08: promessa de pagamento vence', ana, 2, 'todo'],
+      ['Conferir no ERP o pagamento do cliente Q07 L22', ana, -1, 'todo'],
+      ['Encaminhar Q03 L15 ao jurídico (mais de 120 dias)', eu, 5, 'doing'],
+      ['Enviar lembrete de vencimento da parcela de dezembro', ana, -3, 'done'],
+      ['Gerar o carnê anual de 2027 dos clientes em dia', bruno, 20, 'todo'],
+    ]],
+    ['Casa 1001 — pendências do monorepo', 'Organização dos sistemas internos (INAD, Financeiro e plugin dos colaboradores) em um único repositório.', 30, [eu, bruno], [
+      ['Aplicar o tema Órbita no INAD e no Financeiro', eu, -5, 'done'],
+      ['Juntar os arquivos do plugin numa pasta própria, com documentação', eu, 7, 'doing'],
+      ['Subir o ajuste que estabiliza a suíte de testes do INAD', eu, 3, 'todo'],
+      ['Validar o instalador do plugin num Mac', eu, 12, 'todo'],
+      ['Decidir o que fazer com o trabalho parado no repositório antigo do INAD', eu, 14, 'todo'],
+    ]],
+    ['Backups e infraestrutura', 'Rotinas de backup, monitoramento e limpeza dos servidores e computadores da empresa.', 21, [eu, bruno], [
+      ['Desligar a rotina automática que falhava todos os dias', eu, -10, 'done'],
+      ['Apagar sobras de deploys antigos do servidor', eu, -9, 'done'],
+      ['Liberar espaço no disco do computador do financeiro', bruno, -2, 'todo'],
+      ['Reapontar o backup das 17h para o repositório novo', eu, 2, 'doing'],
+      ['Criar o monitor do backup diário do Financeiro', bruno, 4, 'todo'],
+      ['Criar credencial própria do Google Drive para os backups', eu, 18, 'todo'],
+    ]],
+  ];
+
+  const projects = db.get('projects'), tasks = db.get('tasks');
+  for (const [name, description, deadline, members, list] of demo) {
+    if (projects.some(p => p.name === name && p.members.includes(eu))) continue;
+    const id = uid();
+    projects.push({ id, name, description, deadline: addDays(deadline), owner: eu, members });
+    for (const [title, assignee, due, status] of list)
+      tasks.push({ id: uid(), projectId: id, title, description: '', assignee, due: addDays(due), status });
+  }
+  db.set('projects', projects);
+  db.set('tasks', tasks);
+}
+
 // ---------- Ações ----------
 function setStatus(taskId, status) {
   db.set('tasks', db.get('tasks').map(t => t.id === taskId ? { ...t, status } : t));
@@ -212,9 +262,10 @@ $app.addEventListener('click', e => {
   const el = e.target.closest('[data-action]');
   if (!el) return;
   const { action, id, view, dir } = el.dataset;
+  if (action === 'seed') return seedDemo(me()).then(render);
 
   if (action === 'toggle-auth') state.authMode = state.authMode === 'login' ? 'register' : 'login';
-  if (action === 'logout') localStorage.removeItem('session');
+  if (action === 'logout') { localStorage.removeItem('session'); state.authMode = 'login'; state.view = 'projects'; }
   if (action === 'go') state.view = view;
   if (action === 'open') { state.view = 'project'; state.projectId = id; }
   if (action === 'month') state.month = new Date(state.month.getFullYear(), state.month.getMonth() + Number(dir), 1);
