@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Documentação — Sistema Gerenciador de Tarefas Online</title>
+<style>
+  @page { size: A4; margin: 3cm 2cm 2cm 3cm; }
+  body { font-family: "Times New Roman", serif; font-size: 12pt; line-height: 1.5; color: #000; margin: 0; }
+  .capa, .sumario { page-break-after: always; text-align: center; }
+  .capa { display: flex; flex-direction: column; justify-content: space-between; height: 24.5cm; }
+  .capa .topo p, .capa .base p { margin: 0; font-weight: bold; text-transform: uppercase; }
+  .capa h1 { font-size: 16pt; margin: 0 0 12pt; text-transform: uppercase; }
+  .capa .meio p { margin: 4pt 0; }
+  .capa p { text-align: center; text-indent: 0; }
+  .sumario { text-align: left; }
+  .sumario h2 { text-align: center; }
+  .sumario ol { list-style: none; padding: 0; }
+  .sumario li { margin: 4pt 0; }
+  .sumario ol ol { padding-left: 1.5em; }
+  h2 { font-size: 12pt; text-transform: uppercase; margin: 22pt 0 8pt; page-break-after: avoid; }
+  h3 { font-size: 12pt; margin: 14pt 0 6pt; page-break-after: avoid; }
+  p { text-align: justify; text-indent: 1.25cm; margin: 0 0 6pt; }
+  p.sem { text-indent: 0; }
+  li { text-align: justify; margin: 2pt 0; }
+  table { width: 100%; border-collapse: collapse; margin: 6pt 0 4pt; font-size: 11pt; line-height: 1.3; page-break-inside: avoid; }
+  th, td { border: 1px solid #000; padding: 3pt 5pt; text-align: left; vertical-align: top; }
+  th { background: #e8e8e8; }
+  figure { margin: 10pt 0; text-align: center; page-break-inside: avoid; }
+  figure img { max-width: 100%; max-height: 11cm; border: 1px solid #999; }
+  figcaption, .legenda { font-size: 10pt; text-align: center; margin-top: 3pt; text-indent: 0; }
+  .fonte { font-size: 10pt; text-align: center; text-indent: 0; margin: 0 0 8pt; }
+  code { font-family: Consolas, monospace; font-size: 10.5pt; }
+  .ref p { text-indent: 0; text-align: left; margin-bottom: 8pt; }
+  .quebra { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<section class="capa">
+  <div class="topo">
+    <p>Pontifícia Universidade Católica de Goiás</p>
+    <p>Coordenação Ensino a Distância – CEAD</p>
+    <p>Escola Politécnica e de Artes</p>
+    <p>Análise e Desenvolvimento de Sistemas</p>
+  </div>
+  <div class="meio">
+    <p style="font-weight:bold; margin-bottom:40pt">JOÃO VICTOR DIAMANTINO CARDOSO</p>
+    <h1>Sistema Gerenciador de Tarefas Online</h1>
+    <p>Projeto Integrador III–B</p>
+    <p>Organização parceira: CV Administradora de Obras Ltda. (CV ADM)</p>
+  </div>
+  <div class="base">
+    <p>Goiânia, 2026</p>
+  </div>
+</section>
+
+<!-- SUMÁRIO -->
+<section class="sumario">
+  <h2>Sumário</h2>
+  <ol>
+    <li>1 Introdução</li>
+    <li>2 Contextualização Extensionista
+      <ol><li>2.1 A organização parceira</li><li>2.2 Problema identificado</li><li>2.3 Objetivos</li><li>2.4 Público beneficiado</li><li>2.5 Registro da interação com o parceiro</li></ol></li>
+    <li>3 Descrição da Solução Proposta
+      <ol><li>3.1 Requisitos funcionais</li><li>3.2 Requisitos não funcionais</li></ol></li>
+    <li>4 Metodologia de Desenvolvimento</li>
+    <li>5 Gestão do Projeto
+      <ol><li>5.1 Ferramenta e organização</li><li>5.2 Cronograma (sprints)</li><li>5.3 Riscos</li></ol></li>
+    <li>6 Funcionalidades Implementadas
+      <ol><li>6.1 Cadastro e autenticação</li><li>6.2 Projetos</li><li>6.3 Tarefas e quadro Kanban</li><li>6.4 Calendário</li><li>6.5 Dados de exemplo</li></ol></li>
+    <li>7 Arquitetura e Tecnologias
+      <ol><li>7.1 Tecnologias</li><li>7.2 Modelo de dados</li></ol></li>
+    <li>8 Testes e Validação</li>
+    <li>9 Desafios e Melhorias Futuras</li>
+    <li>10 Considerações Finais</li>
+    <li>Referências</li>
+    <li>Apêndice A – Ata de reunião com a organização parceira</li>
+  </ol>
+</section>
+
+<!-- 1 -->
+<h2>1 Introdução</h2>
+<p>Este documento apresenta o desenvolvimento do <b>Sistema Gerenciador de Tarefas Online</b>, realizado no Projeto Integrador III–B do curso de Análise e Desenvolvimento de Sistemas da PUC Goiás. O projeto foi conduzido como atividade de extensão universitária, em parceria com a <b>CV Administradora de Obras Ltda. (CV ADM)</b>, em Goiânia.</p>
+<p>O objetivo foi aplicar conceitos de Gerência de Projetos de Software e de Desenvolvimento Web para atender a uma demanda concreta da organização: organizar, distribuir e acompanhar as tarefas e os projetos internos da equipe. O resultado é um sistema web com cadastro e autenticação de usuários, projetos com prazos e membros, tarefas atribuídas, quadro Kanban e calendário de prazos.</p>
+<p>O documento está organizado da seguinte forma: a seção 2 apresenta a contextualização extensionista; a seção 3 descreve a solução proposta; as seções 4 e 5 tratam da metodologia e da gestão do projeto; as seções 6 e 7 descrevem as funcionalidades e a arquitetura; a seção 8 apresenta os testes; e as seções 9 e 10 trazem os desafios, as melhorias futuras e as considerações finais.</p>
+<table>
+  <tr><th style="width:35%">Sistema publicado</th><td>https://dimasaas.github.io/gerenciador-tarefas-cv-adm/</td></tr>
+  <tr><th>Repositório (código-fonte)</th><td>https://github.com/Dimasaas/gerenciador-tarefas-cv-adm</td></tr>
+  <tr><th>Gestão do projeto</th><td>https://github.com/users/Dimasaas/projects/2</td></tr>
+</table>
+
+<!-- 2 -->
+<h2>2 Contextualização Extensionista</h2>
+
+<h3>2.1 A organização parceira</h3>
+<table>
+  <tr><th style="width:30%">Razão social</th><td>CV Administradora de Obras Ltda. (CV ADM)</td></tr>
+  <tr><th>CNPJ</th><td>31.441.640/0001-60</td></tr>
+  <tr><th>Endereço</th><td>Av. Leblon, 260, Quadra Área, Casa 01 — Goiânia/GO</td></tr>
+  <tr><th>Natureza</th><td>Organização privada: administração de obras e empreendimentos imobiliários</td></tr>
+  <tr><th>Equipe</th><td>Aproximadamente 50 colaboradores</td></tr>
+</table>
+<p>O trabalho foi realizado junto à equipe da imobiliária <b>1001 Negócios Imobiliários</b> (TR Enterprises Ltda., CRECI-GO 44685-J), que atua há oito anos na Grande Goiânia. A 1001 cuida da venda de lotes em loteamentos como o Village Campos Verdes e, em breve, o Setor Comercial Salutis, da cobrança dos clientes que compraram de forma parcelada, da intermediação de imóveis e da administração de aluguéis.</p>
+<p>O aluno integra a equipe da 1001 desde junho de 2026, como Auxiliar Administrativo, e atua no desenvolvimento dos sistemas internos da imobiliária.</p>
+
+<h3>2.2 Problema identificado</h3>
+<p>O problema foi identificado na <b>cobrança da carteira de clientes inadimplentes</b> do Village Campos Verdes, com cerca de 330 vendas parceladas acompanhadas pela equipe. A única fonte de informação era o relatório de inadimplência em PDF emitido pelo ERP da empresa (ProUAU). A equipe lia esse relatório e fazia os contatos por WhatsApp. Cada contato gerava uma tarefa de acompanhamento, como retornar em uma data combinada, conferir se uma promessa de pagamento foi cumprida ou encaminhar o caso ao jurídico. Essas tarefas não tinham onde ficar registradas, e cada novo relatório substituía o anterior sem guardar o histórico. Isso causava:</p>
+<ul>
+  <li><b>Falta de prioridade:</b> não havia um critério claro de quem cobrar primeiro;</li>
+  <li><b>Prazos perdidos:</b> recontatos e promessas de pagamento vencidas dependiam da memória de quem atendeu;</li>
+  <li><b>Responsabilidade difusa:</b> não se sabia quem da equipe tinha falado com qual cliente, nem o que tinha sido combinado;</li>
+  <li><b>Sem visão do andamento:</b> a gestão não conseguia ver o que estava pendente, em andamento ou resolvido.</li>
+</ul>
+<p>A solução desse caso foi desenvolvida em etapas pelo próprio aluno. Em julho de 2026, uma ferramenta passou a ler os relatórios de inadimplência em PDF e a transformar os dados em um banco SQL (SQLite), guardando cada relatório como uma "foto" datada da carteira. Sobre esse banco foram criadas uma fila de cobrança priorizada e uma lista das tarefas do dia, com o registro do desfecho de cada contato. Depois, a leitura do PDF foi substituída pela integração direta com a API do ERP, dando origem ao painel de cobrança usado hoje pela empresa.</p>
+<p>Essa experiência mostrou que <b>organizar as demandas em tarefas com responsável, prazo e status</b> resolve o problema. As demais áreas da empresa, como vendas, demarcação de lotes, documentação de contratos, rotinas de backup e projetos internos, têm a mesma necessidade, mas não contam com uma ferramenta para isso. Com cerca de 50 colaboradores, a coordenação informal das tarefas deixa de funcionar.</p>
+
+<h3>2.3 Objetivos</h3>
+<p><b>Objetivo geral:</b> desenvolver um sistema web para a equipe da organização parceira organizar, distribuir e acompanhar as tarefas e os projetos internos da empresa.</p>
+<p class="sem"><b>Objetivos específicos:</b></p>
+<ol>
+  <li>Permitir o cadastro e o login de cada colaborador, com acesso controlado;</li>
+  <li>Organizar o trabalho em projetos com prazo e membros definidos;</li>
+  <li>Criar tarefas com responsável e prazo, e acompanhá-las até a conclusão;</li>
+  <li>Mostrar o andamento em um quadro Kanban ("A fazer", "Em andamento" e "Concluído");</li>
+  <li>Exibir os prazos de tarefas e projetos em um calendário, destacando as tarefas atrasadas.</li>
+</ol>
+
+<h3>2.4 Público beneficiado</h3>
+<ul>
+  <li><b>Diretoria:</b> passa a ter uma visão consolidada do andamento das demandas e dos prazos;</li>
+  <li><b>Colaboradores</b> (corretores, administrativo, financeiro e cobrança): sabem com clareza o que é responsabilidade de cada um e até quando;</li>
+  <li><b>Clientes da empresa</b> (compradores de lotes e proprietários e inquilinos de imóveis administrados): são beneficiados indiretamente, com retornos mais rápidos e menos demandas esquecidas.</li>
+</ul>
+
+<h3>2.5 Registro da interação com o parceiro</h3>
+<p>A interação com a organização parceira foi registrada em ata de reunião, assinada eletronicamente pelo aluno e pelo diretor Tales Rinald e Sousa, representante da organização, por meio do assinador gov.br (ITI). A ata registra o problema discutido, o escopo mínimo acordado e os encaminhamentos de validação, e está no Apêndice A.</p>
+
+<!-- 3 -->
+<h2>3 Descrição da Solução Proposta</h2>
+<p>A solução é um sistema web de página única, acessado pelo navegador sem instalação. Cada colaborador cria sua conta e passa a ver os projetos dos quais é membro. Dentro de cada projeto, as tarefas são criadas com um responsável e um prazo, e avançam por um quadro Kanban até a conclusão. Um calendário mensal reúne os prazos de todas as tarefas e projetos do usuário.</p>
+<p>O foco do desenvolvimento foi a modelagem funcional e um protótipo navegável e funcional, como previsto na proposta do Projeto Integrador. Os dados ficam armazenados no próprio navegador, o que permite demonstrar todo o fluxo sem depender de servidor; a evolução para um back-end compartilhado está descrita na seção 9.</p>
+
+<h3>3.1 Requisitos funcionais</h3>
+<table>
+  <tr><th style="width:10%">Código</th><th>Requisito</th></tr>
+  <tr><td>RF01</td><td>O sistema deve permitir o cadastro de usuários com nome, e-mail e senha, sem e-mails repetidos.</td></tr>
+  <tr><td>RF02</td><td>O sistema deve autenticar o usuário por e-mail e senha e permitir sair da sessão.</td></tr>
+  <tr><td>RF03</td><td>O usuário deve poder criar projetos com nome, descrição, prazo final e membros.</td></tr>
+  <tr><td>RF04</td><td>O usuário deve ver apenas os projetos dos quais é membro, com o progresso de cada um.</td></tr>
+  <tr><td>RF05</td><td>O usuário deve poder criar tarefas com título, descrição, responsável (membro do projeto) e prazo.</td></tr>
+  <tr><td>RF06</td><td>As tarefas devem ser acompanhadas em um quadro Kanban com as colunas "A fazer", "Em andamento" e "Concluído".</td></tr>
+  <tr><td>RF07</td><td>O sistema deve destacar as tarefas atrasadas (prazo vencido e não concluídas).</td></tr>
+  <tr><td>RF08</td><td>O sistema deve exibir um calendário mensal com os prazos das tarefas e dos projetos.</td></tr>
+  <tr><td>RF09</td><td>O usuário deve poder excluir tarefas e o criador deve poder excluir o projeto.</td></tr>
+</table>
+
+<h3>3.2 Requisitos não funcionais</h3>
+<table>
+  <tr><th style="width:10%">Código</th><th>Requisito</th></tr>
+  <tr><td>RNF01</td><td>O sistema deve funcionar no navegador, sem instalação, inclusive em telas de celular.</td></tr>
+  <tr><td>RNF02</td><td>As senhas não devem ser armazenadas em texto puro (uso de hash SHA-256).</td></tr>
+  <tr><td>RNF03</td><td>Todo texto digitado pelo usuário deve ser tratado antes de ser exibido, evitando a injeção de código (XSS).</td></tr>
+  <tr><td>RNF04</td><td>A interface deve estar em português e usar o formato de data brasileiro (dd/mm/aaaa).</td></tr>
+  <tr><td>RNF05</td><td>O código deve ser simples e sem dependências externas, para facilitar a manutenção.</td></tr>
+</table>
+
+<!-- 4 -->
+<h2>4 Metodologia de Desenvolvimento</h2>
+<p>O projeto adotou uma abordagem ágil inspirada no Scrum e no Kanban, como recomendado pela proposta do Projeto Integrador. O trabalho foi dividido em <b>quatro sprints semanais</b>, entre 9 de novembro e 7 de dezembro de 2026, cada uma com uma meta clara: parceiro e planejamento, protótipo e base do sistema, funcionalidades e entrega.</p>
+<p>O desenvolvimento foi <b>incremental</b>: primeiro a autenticação, depois os projetos, as tarefas, o Kanban e o calendário, com cada incremento testado no navegador antes do próximo. O escopo mínimo foi definido junto à organização parceira e registrado em ata, o que serviu de critério de aceitação. Como o projeto foi desenvolvido individualmente, as cerimônias do Scrum foram simplificadas: o planejamento e a revisão de cada sprint foram feitos sobre o quadro de gestão, e o andamento foi registrado movendo os cartões entre as colunas.</p>
+<p>Todo o código foi versionado com Git e publicado no GitHub, com mensagens de commit descritivas, e o sistema foi publicado no GitHub Pages, o que permite que o parceiro e o professor acessem a versão mais recente a qualquer momento.</p>
+
+<!-- 5 -->
+<h2>5 Gestão do Projeto</h2>
+
+<h3>5.1 Ferramenta e organização</h3>
+<p>A gestão foi feita no <b>GitHub Projects</b>, ligado ao repositório do sistema, em https://github.com/users/Dimasaas/projects/2. Cada atividade é um cartão com status, sprint, tipo (Documentação, Desenvolvimento, Gestão, Parceiro ou Risco) e prazo. O quadro tem duas visões: uma tabela, com todos os campos, e um Kanban, com as colunas Todo, In Progress e Done (Figura 1).</p>
+<figure>
+  <img src="img/github-projects.png" alt="Quadro Kanban do GitHub Projects">
+  <figcaption>Figura 1 – Quadro de gestão do projeto no GitHub Projects (visão Kanban)</figcaption>
+</figure>
+<p class="fonte">Fonte: elaborado pelo autor (2026).</p>
+
+<h3>5.2 Cronograma (sprints)</h3>
+<table>
+  <tr><th style="width:28%">Sprint</th><th>Atividades</th></tr>
+  <tr><td>Sprint 1 — Parceiro e planejamento (09/11 a 15/11)</td><td>Montar o quadro e definir o escopo; reunião com a CV ADM e assinatura da ata; levantar requisitos e riscos; documento de contextualização extensionista.</td></tr>
+  <tr><td>Sprint 2 — Protótipo e base (16/11 a 22/11)</td><td>Criar o repositório; esboço das telas; cadastro e login de usuários; criação de projetos com prazo e membros.</td></tr>
+  <tr><td>Sprint 3 — Funcionalidades (23/11 a 29/11)</td><td>Tarefas (criar, atribuir e concluir); quadro Kanban com arrastar e soltar; calendário de prazos; testes com colaboradores da CV ADM.</td></tr>
+  <tr><td>Sprint 4 — Entrega (30/11 a 07/12)</td><td>Publicar no GitHub Pages; documentação final; roteiro e gravação do vídeo; revisão geral e entrega.</td></tr>
+</table>
+
+<h3>5.3 Riscos</h3>
+<table>
+  <tr><th style="width:30%">Risco</th><th style="width:15%">Impacto</th><th>Mitigação</th></tr>
+  <tr><td>Dados armazenados apenas no navegador</td><td>Médio</td><td>Deixar documentado como limitação e planejar a evolução para API com banco de dados.</td></tr>
+  <tr><td>Pouca disponibilidade dos colaboradores para testes</td><td>Médio</td><td>Agendar a validação com antecedência e preparar dados de exemplo para agilizar a demonstração.</td></tr>
+  <tr><td>Prazo curto (quatro semanas) e desenvolvimento individual</td><td>Alto</td><td>Escopo mínimo fechado em ata, sprints semanais e tecnologia sem etapa de build.</td></tr>
+</table>
+
+<!-- 6 -->
+<h2>6 Funcionalidades Implementadas</h2>
+
+<h3>6.1 Cadastro e autenticação</h3>
+<p>Ao abrir o sistema, o usuário vê a tela de login (Figura 2) e pode alternar para o cadastro. O cadastro exige nome, e-mail válido e senha de pelo menos seis caracteres, e recusa e-mails já cadastrados. A senha é guardada como hash SHA-256, nunca em texto puro. Em caso de e-mail ou senha incorretos, o sistema exibe uma mensagem de erro sem indicar qual dos dois está errado.</p>
+<figure>
+  <img src="img/login.png" alt="Tela de login" style="max-height:6cm">
+  <figcaption>Figura 2 – Tela de login</figcaption>
+</figure>
+<p class="fonte">Fonte: elaborado pelo autor (2026).</p>
+
+<h3>6.2 Projetos</h3>
+<p>A tela inicial lista os projetos dos quais o usuário é membro (Figura 3). Cada cartão mostra a descrição, o prazo final, o número de membros e uma barra de progresso com as tarefas concluídas. Abaixo, um formulário permite criar um novo projeto, escolhendo os membros entre os usuários cadastrados. Quem cria o projeto entra automaticamente como membro e é o único que pode excluí-lo.</p>
+<figure>
+  <img src="img/projetos.png" alt="Lista de projetos">
+  <figcaption>Figura 3 – Lista de projetos e formulário de novo projeto</figcaption>
+</figure>
+<p class="fonte">Fonte: elaborado pelo autor (2026).</p>
+
+<h3>6.3 Tarefas e quadro Kanban</h3>
+<p>Ao abrir um projeto, o usuário vê seus dados, o formulário de nova tarefa e o quadro Kanban (Figura 4). Cada tarefa tem título, descrição, responsável (escolhido entre os membros do projeto) e prazo, que não pode passar do prazo final do projeto. Toda tarefa nova começa em "A fazer". Para mudar o status, o usuário pode arrastar o cartão para outra coluna ou usar os botões de seta, o que também funciona em celulares. Tarefas com prazo vencido e não concluídas ganham uma borda vermelha e a marcação "atrasada".</p>
+<figure>
+  <img src="img/kanban.png" alt="Quadro Kanban de um projeto">
+  <figcaption>Figura 4 – Projeto com o formulário de nova tarefa e o quadro Kanban</figcaption>
+</figure>
+<p class="fonte">Fonte: elaborado pelo autor (2026).</p>
+
+<h3>6.4 Calendário</h3>
+<p>A aba Calendário mostra o mês com os prazos de todas as tarefas e projetos do usuário (Figura 5). As tarefas aparecem na cor do seu status (laranja para "A fazer", azul para "Em andamento" e verde para "Concluído") e o prazo final de cada projeto aparece em vermelho. O dia atual fica destacado, e os botões "Anterior" e "Próximo" navegam entre os meses.</p>
+<figure>
+  <img src="img/calendario.png" alt="Calendário de prazos">
+  <figcaption>Figura 5 – Calendário de prazos</figcaption>
+</figure>
+<p class="fonte">Fonte: elaborado pelo autor (2026).</p>
+
+<h3>6.5 Dados de exemplo</h3>
+<p>Para a demonstração ao parceiro e para o vídeo, o botão "Carregar dados de exemplo" cria três projetos baseados em demandas reais da empresa: a cobrança dos clientes em atraso do Village Campos Verdes, a organização dos sistemas internos em um único repositório e as rotinas de backup e infraestrutura. Os prazos são calculados a partir da data do clique, e os clientes e colegas usados no exemplo são fictícios, para proteger dados pessoais (LGPD).</p>
+
+<!-- 7 -->
+<h2>7 Arquitetura e Tecnologias</h2>
+
+<h3>7.1 Tecnologias</h3>
+<p>O sistema foi construído com HTML, CSS e JavaScript puros, sem frameworks e sem etapa de build. A escolha reduz as dependências, facilita a manutenção e permite publicar o sistema como um site estático no GitHub Pages. A aplicação é de página única: um único arquivo JavaScript desenha cada tela a partir do estado atual e trata os cliques e envios de formulário por delegação de eventos.</p>
+<table>
+  <tr><th style="width:22%">Arquivo</th><th>Responsabilidade</th></tr>
+  <tr><td><code>index.html</code></td><td>Estrutura da página e carregamento do estilo e do script.</td></tr>
+  <tr><td><code>style.css</code></td><td>Aparência, layout responsivo, quadro Kanban e calendário.</td></tr>
+  <tr><td><code>app.js</code></td><td>Telas, regras de negócio, autenticação e persistência dos dados.</td></tr>
+</table>
+<table>
+  <tr><th style="width:22%">Ferramenta</th><th>Uso no projeto</th></tr>
+  <tr><td>Git e GitHub</td><td>Versionamento e repositório remoto do código-fonte.</td></tr>
+  <tr><td>GitHub Pages</td><td>Publicação do sistema na internet.</td></tr>
+  <tr><td>GitHub Projects</td><td>Gestão das atividades, sprints, prazos e riscos.</td></tr>
+  <tr><td>Web Crypto API</td><td>Geração do hash SHA-256 das senhas e dos identificadores únicos.</td></tr>
+  <tr><td>localStorage</td><td>Armazenamento dos dados no navegador.</td></tr>
+</table>
+
+<h3>7.2 Modelo de dados</h3>
+<p>Os dados são guardados em três coleções, com relacionamentos por identificador:</p>
+<table>
+  <tr><th style="width:16%">Coleção</th><th>Campos</th><th style="width:34%">Relacionamentos</th></tr>
+  <tr><td>Usuário</td><td>id, nome, e-mail, hash da senha</td><td>—</td></tr>
+  <tr><td>Projeto</td><td>id, nome, descrição, prazo final, criador, membros</td><td>Criador e membros referenciam usuários (N:N)</td></tr>
+  <tr><td>Tarefa</td><td>id, projeto, título, descrição, responsável, prazo, status</td><td>Pertence a um projeto (N:1); responsável é um usuário (N:1)</td></tr>
+</table>
+<p>O status de uma tarefa assume um de três valores: <code>todo</code> ("A fazer"), <code>doing</code> ("Em andamento") e <code>done</code> ("Concluído"). Ao excluir um projeto, todas as suas tarefas também são excluídas.</p>
+
+<!-- 8 -->
+<h2>8 Testes e Validação</h2>
+<p>Os testes foram funcionais e manuais, executados no navegador sobre o sistema rodando localmente. Cada caso de teste corresponde a um requisito:</p>
+<table>
+  <tr><th style="width:6%">#</th><th>Caso de teste</th><th style="width:30%">Resultado</th></tr>
+  <tr><td>1</td><td>Cadastrar um usuário e entrar no sistema</td><td>Aprovado</td></tr>
+  <tr><td>2</td><td>Entrar com senha errada</td><td>Aprovado: acesso recusado com mensagem de erro</td></tr>
+  <tr><td>3</td><td>Criar projetos e carregar os dados de exemplo duas vezes</td><td>Aprovado: 3 projetos e 16 tarefas, sem duplicar</td></tr>
+  <tr><td>4</td><td>Mover uma tarefa de "A fazer" para "Em andamento"</td><td>Aprovado</td></tr>
+  <tr><td>5</td><td>Destacar tarefa com prazo vencido</td><td>Aprovado</td></tr>
+  <tr><td>6</td><td>Entrar com outro usuário, membro de apenas um projeto</td><td>Aprovado: vê somente o projeto em que é membro</td></tr>
+  <tr><td>7</td><td>Exibir os prazos no calendário</td><td>Aprovado: 15 prazos exibidos no mês</td></tr>
+  <tr><td>8</td><td>Sair do sistema e voltar à tela de login</td><td>Reprovado na primeira execução (abria a tela de cadastro); corrigido e aprovado</td></tr>
+</table>
+<p>A validação com a organização parceira está prevista para 1º de dezembro de 2026, conforme a ata de reunião: o sistema será apresentado à equipe, com retorno da diretoria até 4 de dezembro.</p>
+
+<!-- 9 -->
+<h2>9 Desafios e Melhorias Futuras</h2>
+<p>O principal desafio foi <b>transformar um problema já vivido pela empresa em requisitos genéricos</b>, que sirvam para qualquer equipe e não apenas para a cobrança. Outro desafio foi o <b>prazo curto</b> com desenvolvimento individual, resolvido com um escopo mínimo fechado em ata e uma tecnologia sem etapa de build. Também foi preciso cuidar da <b>proteção de dados</b>: como o repositório é público, nenhum dado real de cliente ou detalhe sensível da infraestrutura da empresa foi incluído, e os exemplos usam pessoas e clientes fictícios.</p>
+<p class="sem">As melhorias previstas para uma próxima versão são:</p>
+<ul>
+  <li><b>Back-end com banco de dados:</b> uma API (por exemplo, em Ruby on Rails com PostgreSQL, a mesma base dos sistemas internos da empresa) para que toda a equipe compartilhe os mesmos dados entre computadores;</li>
+  <li><b>Notificações</b> de prazo por e-mail ou WhatsApp;</li>
+  <li><b>Edição de tarefas, comentários e histórico</b> de alterações;</li>
+  <li><b>Perfis de acesso</b>, separando gestores e colaboradores;</li>
+  <li><b>Integração com os sistemas da empresa</b>, criando tarefas automaticamente a partir do painel de cobrança.</li>
+</ul>
+
+<!-- 10 -->
+<h2>10 Considerações Finais</h2>
+<p>O projeto atingiu o objetivo de desenvolver um sistema web de gerenciamento de tarefas para uma organização real, cumprindo todas as funcionalidades mínimas da proposta: cadastro e autenticação, projetos com prazos e membros, tarefas com acompanhamento até a conclusão, quadro Kanban e calendário de prazos.</p>
+<p>Do ponto de vista extensionista, o trabalho partiu de um problema concreto da CV ADM e aplicou uma solução que a própria empresa já havia validado em uma área, a cobrança, levando-a para as demais equipes. Do ponto de vista acadêmico, o projeto permitiu aplicar na prática a gestão ágil, com sprints, quadro Kanban e controle de riscos, e o desenvolvimento web, do levantamento de requisitos à publicação.</p>
+
+<!-- REFERÊNCIAS -->
+<div class="ref">
+<h2>Referências</h2>
+<p>GITHUB. <b>GitHub Docs</b>: about Projects. Disponível em: https://docs.github.com/en/issues/planning-and-tracking-with-projects. Acesso em: 8 nov. 2026.</p>
+<p>MDN WEB DOCS. <b>Web Crypto API</b>. Mozilla, 2026. Disponível em: https://developer.mozilla.org/pt-BR/docs/Web/API/Web_Crypto_API. Acesso em: 8 nov. 2026.</p>
+<p>MDN WEB DOCS. <b>Window.localStorage</b>. Mozilla, 2026. Disponível em: https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage. Acesso em: 8 nov. 2026.</p>
+<p>PRESSMAN, R. S. <b>Engenharia de Software</b>: uma abordagem profissional. 8. ed. Porto Alegre: McGraw-Hill, 2014.</p>
+<p>SCHWABER, K.; SUTHERLAND, J. <b>O Guia do Scrum</b>. 2020. Disponível em: https://scrumguides.org. Acesso em: 8 nov. 2026.</p>
+<p>SOMMERVILLE, I. <b>Engenharia de Software</b>. 9. ed. São Paulo: Pearson, 2011.</p>
+</div>
+
+<!-- APÊNDICE -->
+<h2 class="quebra">Apêndice A – Ata de reunião com a organização parceira</h2>
+<p class="sem">A ata de reunião assinada eletronicamente pelo aluno e pelo representante da CV ADM acompanha este documento no arquivo <b>Ata-Reuniao-CV-ADM_assinado.pdf</b>. As assinaturas podem ser verificadas em https://validar.iti.gov.br.</p>
+
+</body>
+</html>
