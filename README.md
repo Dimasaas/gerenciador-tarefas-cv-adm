@@ -6,7 +6,7 @@ Aluno: **João Victor Diamantino Cardoso**
 Sistema web para a equipe da **CV Administradora de Obras Ltda. (CV ADM)** e da imobiliária 1001 organizarem, distribuírem e acompanharem as tarefas e os projetos internos da empresa.
 
 - **Sistema online:** https://dimasaas.github.io/gerenciador-tarefas-cv-adm/
-- **Gestão do projeto (GitHub Projects):** _link na aba Projects do repositório_
+- **Gestão do projeto (GitHub Projects):** https://github.com/users/Dimasaas/projects/2
 
 ## Funcionalidades
 
