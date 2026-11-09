@@ -4,7 +4,7 @@
 
 ## Antes de gravar
 
-- [ ] Abra o sistema numa **janela anônima**, para começar sem dados: https://dimasaas.github.io/gerenciador-tarefas-cv-adm/
+- [ ] Abra o sistema numa **janela anônima**, para começar sem dados: https://dimasaas.github.io/pi-3b-gerenciador-de-tarefas/
 - [ ] Deixe abertas em outras abas o **quadro do GitHub Projects** (https://github.com/users/Dimasaas/projects/2) e o **repositório**.
 - [ ] Gravador: o OBS ou a gravação de tela do Windows (`Win + Alt + R` na Xbox Game Bar). Grave com microfone.
 - [ ] Não leia o roteiro palavra por palavra. Use as falas como guia e fale do seu jeito.

@@ -1,12 +1,13 @@
-# Sistema Gerenciador de Tarefas Online — CV ADM
+# PI III-B — Sistema Gerenciador de Tarefas Online
 
-Projeto Integrador III — Análise e Desenvolvimento de Sistemas, PUC Goiás (CEAD), 2026.
+Projeto Integrador III-B — Análise e Desenvolvimento de Sistemas, PUC Goiás (CEAD), 2026.
 Aluno: **João Victor Diamantino Cardoso**
 
 Sistema web para a equipe da **CV Administradora de Obras Ltda. (CV ADM)** e da imobiliária 1001 organizarem, distribuírem e acompanharem as tarefas e os projetos internos da empresa.
 
-- **Sistema online:** https://dimasaas.github.io/gerenciador-tarefas-cv-adm/
+- **Sistema online:** https://dimasaas.github.io/pi-3b-gerenciador-de-tarefas/
 - **Gestão do projeto (GitHub Projects):** https://github.com/users/Dimasaas/projects/2
+- **Entregas** (documentação, ata, plano, roteiro do vídeo): pasta [`entregas/`](entregas/)
 
 ## Funcionalidades
 
@@ -38,6 +39,7 @@ HTML, CSS e JavaScript puros, sem framework e sem etapa de build. Os dados ficam
 | `index.html` | Estrutura da página |
 | `style.css` | Estilos e layout responsivo |
 | `app.js` | Telas, regras e persistência |
+| `entregas/` | Documentos da entrega do Projeto Integrador |
 
 ## Limitações e melhorias futuras
 

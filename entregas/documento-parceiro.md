@@ -21,7 +21,6 @@ A 1001 atua há 8 anos na Grande Goiânia. Suas principais frentes são:
 
 A empresa já usa sistemas internos desenvolvidos sob medida, como o painel de cobrança de inadimplência (INAD) e o sistema financeiro. Esses sistemas cuidam do **dinheiro** (parcelas, cobrança e caixa). Fora da cobrança, nenhum deles organiza o **trabalho** da equipe: quem faz o quê, até quando e em que pé está.
 
-**Equipe:** aproximadamente 50 colaboradores, entre diretoria, corretores, administrativo, financeiro, cobrança e obras **[CONFIRMAR setores]**. Com uma equipe desse tamanho, a coordenação informal das tarefas deixa de funcionar.
 **Função do aluno na empresa:** Auxiliar Administrativo, contratado pela CV ADM em 29/06/2026, atuando junto à equipe da 1001 e no desenvolvimento dos sistemas internos.
 
 ## 2. Problema identificado

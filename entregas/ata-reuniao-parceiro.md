@@ -19,8 +19,8 @@
 
 ## Registro da discussão
 1. O aluno apresentou o objetivo do Projeto Integrador: desenvolver um sistema web de gerenciamento de tarefas para atender a uma demanda real da organização parceira.
-2. Foi relembrado o caso da **cobrança da carteira de inadimplentes** do Village Campos Verdes. Antes de existir uma ferramenta própria, a informação vinha apenas do relatório em PDF do ERP, e os acompanhamentos com os clientes (retornos, promessas de pagamento e encaminhamentos ao jurídico) não tinham registro. Isso levava a prazos perdidos e à falta de clareza sobre quem tinha atendido cada cliente.
-3. A empresa reconheceu que esse problema foi resolvido quando as demandas passaram a ser organizadas em tarefas com **responsável, prazo e status**, primeiro com a leitura dos PDFs para um banco de dados e depois com o painel INAD.
+2. Foi apresentado, como exemplo, o caso das **solicitações de pagamento da área financeira**. Antes do sistema financeiro interno (FINAC), os pedidos de pagamento a fornecedores e prestadores (RTs) chegavam por WhatsApp, e-mail e papel, sem um lugar único de registro. Pedidos ficavam parados aguardando autorização, vencimentos eram perdidos e não se sabia quem tinha lançado, autorizado ou pago cada um.
+3. A empresa reconheceu que esse problema foi resolvido quando as solicitações passaram a ser organizadas no FINAC com **responsável, prazo e status** (lançado, aguardando autorização, autorizado e pago).
 4. Foi apontado que outras demandas internas (vendas, demarcação de lotes, documentação de contratos e projetos internos) poderiam se beneficiar do mesmo modelo de organização.
 5. Ficou definido o escopo mínimo do sistema:
    - cadastro e login de colaboradores;

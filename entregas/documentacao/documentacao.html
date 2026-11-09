@@ -85,8 +85,8 @@
 <p>O objetivo foi aplicar conceitos de Gerência de Projetos de Software e de Desenvolvimento Web para atender a uma demanda concreta da organização: organizar, distribuir e acompanhar as tarefas e os projetos internos da equipe. O resultado é um sistema web com cadastro e autenticação de usuários, projetos com prazos e membros, tarefas atribuídas, quadro Kanban e calendário de prazos.</p>
 <p>O documento está organizado da seguinte forma: a seção 2 apresenta a contextualização extensionista; a seção 3 descreve a solução proposta; as seções 4 e 5 tratam da metodologia e da gestão do projeto; as seções 6 e 7 descrevem as funcionalidades e a arquitetura; a seção 8 apresenta os testes; e as seções 9 e 10 trazem os desafios, as melhorias futuras e as considerações finais.</p>
 <table>
-  <tr><th style="width:35%">Sistema publicado</th><td>https://dimasaas.github.io/gerenciador-tarefas-cv-adm/</td></tr>
-  <tr><th>Repositório (código-fonte)</th><td>https://github.com/Dimasaas/gerenciador-tarefas-cv-adm</td></tr>
+  <tr><th style="width:35%">Sistema publicado</th><td>https://dimasaas.github.io/pi-3b-gerenciador-de-tarefas/</td></tr>
+  <tr><th>Repositório (código-fonte)</th><td>https://github.com/Dimasaas/pi-3b-gerenciador-de-tarefas</td></tr>
   <tr><th>Gestão do projeto</th><td>https://github.com/users/Dimasaas/projects/2</td></tr>
 </table>
 
@@ -99,7 +99,6 @@
   <tr><th>CNPJ</th><td>31.441.640/0001-60</td></tr>
   <tr><th>Endereço</th><td>Av. Leblon, 260, Quadra Área, Casa 01 — Goiânia/GO</td></tr>
   <tr><th>Natureza</th><td>Organização privada: administração de obras e empreendimentos imobiliários</td></tr>
-  <tr><th>Equipe</th><td>Aproximadamente 50 colaboradores</td></tr>
 </table>
 <p>O trabalho foi realizado junto à equipe da imobiliária <b>1001 Negócios Imobiliários</b> (TR Enterprises Ltda., CRECI-GO 44685-J), que atua há oito anos na Grande Goiânia. A 1001 cuida da venda de lotes em loteamentos como o Village Campos Verdes e, em breve, o Setor Comercial Salutis, da cobrança dos clientes que compraram de forma parcelada, da intermediação de imóveis e da administração de aluguéis.</p>
 <p>O aluno integra a equipe da 1001 desde junho de 2026, como Auxiliar Administrativo, e atua no desenvolvimento dos sistemas internos da imobiliária.</p>
@@ -113,7 +112,7 @@
   <li><b>Sem visão do andamento:</b> a gestão não conseguia ver o que estava pendente, em andamento ou resolvido.</li>
 </ul>
 <p>A solução desse caso foi desenvolvida em etapas pelo próprio aluno. Em julho de 2026, uma ferramenta passou a ler os relatórios de inadimplência em PDF e a transformar os dados em um banco SQL (SQLite), guardando cada relatório como uma "foto" datada da carteira. Sobre esse banco foram criadas uma fila de cobrança priorizada e uma lista das tarefas do dia, com o registro do desfecho de cada contato. Depois, a leitura do PDF foi substituída pela integração direta com a API do ERP, dando origem ao painel de cobrança usado hoje pela empresa.</p>
-<p>Essa experiência mostrou que <b>organizar as demandas em tarefas com responsável, prazo e status</b> resolve o problema. As demais áreas da empresa, como vendas, demarcação de lotes, documentação de contratos, rotinas de backup e projetos internos, têm a mesma necessidade, mas não contam com uma ferramenta para isso. Com cerca de 50 colaboradores, a coordenação informal das tarefas deixa de funcionar.</p>
+<p>Essa experiência mostrou que <b>organizar as demandas em tarefas com responsável, prazo e status</b> resolve o problema. As demais áreas da empresa, como vendas, demarcação de lotes, documentação de contratos, rotinas de backup e projetos internos, têm a mesma necessidade, mas não contam com uma ferramenta para isso.</p>
 
 <h3>2.3 Objetivos</h3>
 <p><b>Objetivo geral:</b> desenvolver um sistema web para a equipe da organização parceira organizar, distribuir e acompanhar as tarefas e os projetos internos da empresa.</p>

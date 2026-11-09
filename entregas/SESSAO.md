@@ -6,10 +6,9 @@ Registro de onde o Projeto Integrador III parou e do que falta. **Entrega: 07/12
 
 | O quê | Onde |
 |---|---|
-| Sistema (GitHub Pages) | https://dimasaas.github.io/gerenciador-tarefas-cv-adm/ |
-| Código, repositório **público** | https://github.com/Dimasaas/gerenciador-tarefas-cv-adm (pasta `gerenciador-tarefas/`) |
+| Sistema (GitHub Pages) | https://dimasaas.github.io/pi-3b-gerenciador-de-tarefas/ |
+| Repositório **público** (código na raiz, entregas em `entregas/`) | https://github.com/Dimasaas/pi-3b-gerenciador-de-tarefas |
 | Gestão do projeto (item 2.2) | https://github.com/users/Dimasaas/projects/2 (visões Kanban e "View 1" em tabela) |
-| Esta pasta, repositório **privado** | https://github.com/Dimasaas/projeto-integrador-3-puc |
 
 ## Situação das entregas
 
@@ -21,11 +20,11 @@ Registro de onde o Projeto Integrador III parou e do que falta. **Entrega: 07/12
 | 2.4 Documentação | ✅ `Documentacao-PI-III-Gerenciador-de-Tarefas.pdf` (16 páginas, formato ABNT, com 5 figuras) |
 | 2.4 Repositório Git | ✅ Público |
 | 2.4 Vídeo de ~5 min | ⏳ **Falta gravar.** Roteiro em `roteiro-video.md` |
-| 3 Registro da interação com o parceiro | ⏳ Ata assinada pelo aluno (`Ata-Reuniao-CV-ADM_assinado.pdf`). **Falta a assinatura do Tales** pelo assinador.iti.br |
+| 3 Registro da interação com o parceiro | ⏳ Ata em `Ata-Reuniao-CV-ADM.pdf` (registro da discussão refeito em 09/11, com o caso do FINAC). **Falta assinar** (aluno e Tales) pelo assinador.iti.br |
 
 ## Próximos passos
 
-1. Mandar o `Ata-Reuniao-CV-ADM_assinado.pdf` para o Tales assinar pelo gov.br. Depois, substituir o arquivo aqui e passar o cartão "Reunião com a CV ADM" para Done no quadro.
+1. Assinar de novo o `Ata-Reuniao-CV-ADM.pdf` (as versões assinadas antigas foram apagadas em 09/11) e mandar para o Tales assinar pelo gov.br. Depois, adicionar o arquivo assinado aqui e passar o cartão "Reunião com a CV ADM" para Done no quadro.
 2. Gravar o vídeo seguindo o `roteiro-video.md`, abrindo o sistema numa janela anônima.
 3. Validação com a empresa, prevista para 01/12 (na ata e na seção 8 da documentação). Se acontecer, atualizar a seção 8 com o resultado.
 4. Entregar até 07/12: documentação, link do quadro, link do repositório, vídeo e ata assinada.
@@ -45,12 +44,11 @@ Registro de onde o Projeto Integrador III parou e do que falta. **Entrega: 07/12
 
 | Arquivo | O que é |
 |---|---|
-| `__ Plataforma A.pdf` | Enunciado do professor |
-| `Documentacao-PI-III-Gerenciador-de-Tarefas.pdf` / `_assinado.pdf` | Documentação final |
+| `Proposta-PI-III-B.pdf` | Proposta (enunciado) do PI III-B |
+| `Documentacao-PI-III-Gerenciador-de-Tarefas.pdf` | Documentação final |
 | `documentacao/documentacao.html` + `img/` | Fonte da documentação (para gerar o PDF de novo, veja o README) |
-| `Ata-Reuniao-CV-ADM.pdf` / `_assinado.pdf` | Ata original e a assinada pelo aluno |
+| `Ata-Reuniao-CV-ADM.pdf` | Ata, sem assinatura |
 | `ata/ata.html`, `ata-reuniao-parceiro.md` | Fonte da ata |
 | `documento-parceiro.md` | Contextualização extensionista |
 | `plano-trello.md` | Plano das sprints (o quadro real é o GitHub Projects) |
 | `roteiro-video.md` | Roteiro do vídeo |
-| `gerenciador-tarefas/` | Código do sistema (repositório próprio, público) |
