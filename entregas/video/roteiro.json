@@ -1,0 +1,17 @@
+{
+  "titulo": "Gerenciador de Tarefas Online — apresentação do PI III-B",
+  "cenas": [
+    {"id": "b01", "tela": "login", "fala": "Olá! Eu sou o João Victor, aluno de Análise e Desenvolvimento de Sistemas da PUC Goiás. Este é o meu Projeto Integrador três: o Sistema Gerenciador de Tarefas Online, feito em parceria com a TR Enterprises, a 1001 Negócios Imobiliários, empresa onde eu trabalho."},
+    {"id": "b02", "tela": "problema", "fala": "A equipe da 1001 cuida da venda de lotes, da cobrança e da administração dos imóveis. O problema apareceu primeiro na cobrança: são cerca de trezentas e trinta vendas parceladas, e cada contato com um cliente gerava uma tarefa, como retornar em tal dia ou conferir uma promessa de pagamento. Essas tarefas não ficavam registradas em lugar nenhum, então prazos se perdiam e ninguém sabia quem tinha falado com quem."},
+    {"id": "b03", "tela": "problema", "fala": "A empresa resolveu isso na cobrança organizando as demandas em tarefas com responsável, prazo e status. Só que as outras áreas, como vendas, contratos e os projetos internos, continuavam sem essa organização. Este sistema leva esse modelo para qualquer equipe da empresa."},
+    {"id": "b04", "tela": "gestao", "fala": "Para gerenciar o projeto, eu usei o GitHub Projects. Dividi o trabalho em quatro sprints semanais, e cada cartão tem status, sprint, tipo e prazo. Os riscos também estão no quadro, como o prazo curto e o fato de os dados ficarem no navegador."},
+    {"id": "b05", "tela": "cadastro", "fala": "Agora, o sistema. O acesso é controlado: cada colaborador cria a sua conta, e a senha é guardada com hash, nunca em texto aberto."},
+    {"id": "b06", "tela": "exemplo", "fala": "Para a demonstração, carreguei três projetos baseados em demandas reais da empresa: a cobrança, a organização dos sistemas internos e os backups. Os clientes e os colegas são fictícios, para proteger dados pessoais."},
+    {"id": "b07", "tela": "projetos", "fala": "Cada projeto tem prazo, membros e uma barra de progresso das tarefas concluídas."},
+    {"id": "b08", "tela": "kanban", "fala": "Aqui está o quadro Kanban, com A fazer, Em andamento e Concluído. Dá para arrastar o cartão ou usar as setas, o que também funciona no celular. O sistema destaca sozinho as tarefas atrasadas, e criar uma tarefa nova, com responsável e prazo, leva poucos segundos."},
+    {"id": "b09", "tela": "calendario", "fala": "O calendário junta os prazos de todos os projetos. Cada cor é um status, e o vermelho marca o prazo final de um projeto."},
+    {"id": "b10", "tela": "desafios", "fala": "O principal desafio foi transformar um problema que a empresa já tinha vivido na cobrança em algo genérico, que sirva para qualquer equipe. Outro foi o prazo: quatro semanas, sozinho. Então eu fechei um escopo mínimo com a empresa, em ata, e usei HTML, CSS e JavaScript puros, sem framework. E também a proteção de dados: o repositório é público, então nenhum dado real de cliente entrou no projeto."},
+    {"id": "b11", "tela": "melhorias", "fala": "Como próximos passos: um back-end com banco de dados, para a equipe toda compartilhar as mesmas informações, já que hoje os dados ficam no navegador; avisos de prazo por e-mail ou WhatsApp; edição e comentários nas tarefas; e a integração com o painel de cobrança da empresa, criando tarefas automaticamente."},
+    {"id": "b12", "tela": "fim", "fala": "O sistema está publicado no GitHub Pages, e o código, a documentação e o quadro de gestão estão no GitHub. Obrigado!"}
+  ]
+}
