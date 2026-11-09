@@ -1,6 +1,6 @@
 # Entregas — Projeto Integrador III-B — PUC Goiás (ADS)
 
-Arquivos de entrega do **Sistema Gerenciador de Tarefas Online**. Organização parceira: CV ADM e equipe da imobiliária 1001.
+Arquivos de entrega do **Sistema Gerenciador de Tarefas Online**. Organização parceira: TR Enterprises Ltda. (1001 Negócios Imobiliários).
 Aluno: João Victor Diamantino Cardoso. Entrega: **07/12/2026**.
 
 - **Sistema:** https://dimasaas.github.io/pi-3b-gerenciador-de-tarefas/

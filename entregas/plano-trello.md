@@ -1,6 +1,6 @@
 # Quadro do projeto (Trello) — Item 2.2
 
-**Quadro:** "PI III — Gerenciador de Tarefas CV ADM"
+**Quadro:** "PI III — Gerenciador de Tarefas TR Enterprises"
 **Listas:** Backlog · A fazer · Em andamento · Em revisão · Concluído
 **Etiquetas:** 🟦 Documentação · 🟩 Desenvolvimento · 🟨 Gestão · 🟥 Risco · 🟪 Parceiro
 
@@ -9,7 +9,7 @@ Responsável: **João Victor (JV)**, trabalho individual. As etiquetas e as spri
 ## Sprint 1 — Parceiro e planejamento (09/11 a 15/11)
 | Cartão | Etiqueta | Responsável | Prazo |
 |---|---|---|---|
-| Reunião com a CV ADM e assinatura da ata | 🟪 | JV | 11/11 |
+| Reunião com a TR Enterprises e assinatura da ata | 🟪 | JV | 11/11 |
 | Escrever o documento de contextualização (2.1) | 🟦 | JV | 14/11 |
 | Montar o quadro e definir o escopo | 🟨 | JV | 10/11 |
 | Levantar requisitos e riscos | 🟨 | JV | 14/11 |
@@ -28,7 +28,7 @@ Responsável: **João Victor (JV)**, trabalho individual. As etiquetas e as spri
 | Tarefas: criar, atribuir e concluir | 🟩 | JV | 25/11 |
 | Quadro Kanban com arrastar e soltar | 🟩 | JV | 27/11 |
 | Calendário de prazos | 🟩 | JV | 29/11 |
-| Testes com colaboradores da CV ADM | 🟪 | JV | 29/11 |
+| Testes com colaboradores da TR Enterprises | 🟪 | JV | 29/11 |
 
 ## Sprint 4 — Entrega (30/11 a 07/12)
 | Cartão | Etiqueta | Responsável | Prazo |

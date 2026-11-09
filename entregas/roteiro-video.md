@@ -14,7 +14,7 @@
 ## 1. Abertura (0:00 – 0:30)
 **Tela:** você na câmera, ou a tela de login do sistema.
 
-> "Olá, eu sou o João Victor, aluno de Análise e Desenvolvimento de Sistemas da PUC Goiás. Este é o meu Projeto Integrador III: o Sistema Gerenciador de Tarefas Online, desenvolvido em parceria com a CV ADM, empresa onde eu trabalho."
+> "Olá, eu sou o João Victor, aluno de Análise e Desenvolvimento de Sistemas da PUC Goiás. Este é o meu Projeto Integrador III: o Sistema Gerenciador de Tarefas Online, desenvolvido em parceria com a TR Enterprises, a 1001 Negócios Imobiliários, empresa onde eu trabalho."
 
 ## 2. O problema do parceiro (0:30 – 1:20)
 **Tela:** pode deixar a tela de login, ou mostrar a página 4 da documentação (seção 2.2).

@@ -4,17 +4,17 @@
 
 ## 1. Caracterização da organização parceira
 
-**Nome:** CV ADM (Campos Verdes)
-**Razão social:** CV Administradora de Obras Ltda. — CNPJ 31.441.640/0001-60
+**Nome:** TR Enterprises (1001 Negócios Imobiliários)
+**Razão social:** TR Enterprises Ltda. — CNPJ 60.478.165/0001-03
 **Ramo:** administração de obras e empreendimentos imobiliários (organização privada)
-**Endereço:** Av. Leblon, 260, Quadra Área, Casa 01 — Goiânia/GO
+**Endereço:** Rua CV 21, Quadra Área Margem Esquerda 900m, Sala 02, Chácara Paraíso, Residencial Village Campos Verdes — Goiânia/GO
 **Empresa operadora dos empreendimentos:** 1001 Negócios Imobiliários (TR Enterprises Ltda., CNPJ 60.478.165/0001-03, CRECI-GO 44685-J — https://1001imoveis.com)
 
 O trabalho foi realizado junto à equipe da imobiliária **1001 Negócios Imobiliários**, que cuida da venda de lotes em loteamentos como o Village Campos Verdes e, em breve, o Setor Comercial Salutis. O aluno integra a equipe da 1001 desde junho de 2026, como Auxiliar Administrativo, e atua no desenvolvimento dos sistemas internos.
 
 A 1001 atua há 8 anos na Grande Goiânia. Suas principais frentes são:
 
-- **Venda de lotes:** principalmente no Village Campos Verdes (Goiânia), da CV ADM, e também em outros loteamentos operados pela 1001, como o Residencial Boulevard (Aparecida de Goiânia) e o Setor Comercial Salutis (Senador Canedo, em desenvolvimento);
+- **Venda de lotes:** principalmente no Village Campos Verdes (Goiânia), e também em outros loteamentos operados pela 1001, como o Residencial Boulevard (Aparecida de Goiânia) e o Setor Comercial Salutis (Senador Canedo, em desenvolvimento);
 - **Intermediação** de imóveis exclusivos e de parceiros, incluindo apartamentos;
 - **Administração de aluguéis** de terceiros: contrato, cobrança, repasse e prestação de contas;
 - **Cobrança da carteira** de clientes que compraram lotes de forma parcelada.
@@ -64,4 +64,4 @@ As demais áreas da empresa, como vendas, demarcação de lotes, documentação 
 
 ## 5. Registro da interação com o parceiro
 
-A interação com a organização parceira está registrada na **ata de reunião** em anexo, assinada pelo aluno e por um representante da CV ADM.
+A interação com a organização parceira está registrada na **ata de reunião** em anexo, assinada pelo aluno e por um representante da TR Enterprises.

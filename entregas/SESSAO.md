@@ -24,7 +24,7 @@ Registro de onde o Projeto Integrador III parou e do que falta. **Entrega: 07/12
 
 ## Próximos passos
 
-1. Assinar de novo o `Ata-Reuniao-CV-ADM.pdf` (as versões assinadas antigas foram apagadas em 09/11) e mandar para o Tales assinar pelo gov.br. Depois, adicionar o arquivo assinado aqui e passar o cartão "Reunião com a CV ADM" para Done no quadro.
+1. Assinar o `Ata-Reuniao-TR-Enterprises.pdf` (as versões assinadas antigas foram apagadas em 09/11) e mandar para o Tales assinar pelo gov.br. Depois, adicionar o arquivo assinado aqui e passar o cartão "Reunião com a TR Enterprises" para Done no quadro.
 2. Gravar o vídeo seguindo o `roteiro-video.md`, abrindo o sistema numa janela anônima.
 3. Validação com a empresa, prevista para 01/12 (na ata e na seção 8 da documentação). Se acontecer, atualizar a seção 8 com o resultado.
 4. Entregar até 07/12: documentação, link do quadro, link do repositório, vídeo e ata assinada.
@@ -32,7 +32,7 @@ Registro de onde o Projeto Integrador III parou e do que falta. **Entrega: 07/12
 
 ## Decisões tomadas (e por quê)
 
-- **Organização parceira = CV ADM** (CV Administradora de Obras Ltda., CNPJ 31.441.640/0001-60), porque é ela quem contrata o aluno e é o nome que está na ata já assinada. **O contexto descrito é só o da imobiliária 1001**, que cuida da venda de lotes, da cobrança e da administração. Não se afirma que a CV é construtora ou dona do loteamento.
+- **Organização parceira = TR Enterprises** (TR Enterprises Ltda., a 1001 Negócios Imobiliários, CNPJ 60.478.165/0001-03), por decisão do João em 09/11/2026: a mesma concedente em todos os PIs. A ata foi refeita com esse nome e precisa ser assinada de novo. O vínculo de emprego do aluno continua descrito como é (contratado pela CV ADM). **O contexto descrito é só o da imobiliária 1001**, que cuida da venda de lotes, da cobrança e da administração. Não se afirma que a CV é construtora ou dona do loteamento.
 - **Problema extensionista:** a cobrança de inadimplentes (~330 vendas). Ela começou com o leitor de PDF que gerava SQL (repositório `INAD-Cobranca`, julho/2026) e virou o INAD. O sistema do PI generaliza o modelo "tarefa com responsável, prazo e status" para as outras áreas.
 - **Não usar o leitor de OCR/INAD como entrega:** ele não tem Kanban nem calendário, é anterior à disciplina e contém dados reais de clientes (LGPD).
 - **Trabalho individual.** Cargo usado em todos os lugares: Auxiliar Administrativo (como está no holerite).

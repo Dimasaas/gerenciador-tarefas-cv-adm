@@ -1,15 +1,15 @@
 # ATA DE REUNIÃO — PROJETO INTEGRADOR III
 
 **Instituição de ensino:** Pontifícia Universidade Católica de Goiás — Análise e Desenvolvimento de Sistemas (CEAD)
-**Organização parceira:** CV Administradora de Obras Ltda. (CV ADM) — CNPJ 31.441.640/0001-60
-**Local:** Av. Leblon, 260, Quadra Área, Casa 01 — Goiânia/GO
+**Organização parceira:** TR Enterprises Ltda. (1001 Negócios Imobiliários) — CNPJ 60.478.165/0001-03
+**Local:** Rua CV 21, Quadra Área Margem Esquerda 900m, Sala 02, Chácara Paraíso, Residencial Village Campos Verdes — Goiânia/GO
 **Data:** ____/____/2026  **Horário:** ____:____
 
 ## Participantes
 | Nome | Função | Organização |
 |---|---|---|
-| João Victor Diamantino Cardoso | Aluno / Auxiliar Administrativo | PUC Goiás / CV ADM |
-| ________________________________ | ________________________ | CV ADM |
+| João Victor Diamantino Cardoso | Aluno / Auxiliar Administrativo | PUC Goiás / TR Enterprises |
+| ________________________________ | ________________________ | TR Enterprises |
 
 ## Pauta
 1. Apresentação do Projeto Integrador e da proposta de extensão universitária;
@@ -34,7 +34,7 @@
 |---|---|---|
 | Desenvolver o protótipo funcional do sistema | João Victor | 29/11/2026 |
 | Apresentar o sistema à empresa para validação | João Victor | 01/12/2026 |
-| Dar retorno sobre o sistema apresentado | Representante da CV ADM | 04/12/2026 |
+| Dar retorno sobre o sistema apresentado | Representante da TR Enterprises | 04/12/2026 |
 
 &nbsp;
 
@@ -45,4 +45,4 @@ _______________________________________
 
 _______________________________________
 **Nome:** ______________________ — **Cargo:** ______________________
-CV Administradora de Obras Ltda.
+TR Enterprises Ltda.

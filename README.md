@@ -3,7 +3,7 @@
 Projeto Integrador III-B — Análise e Desenvolvimento de Sistemas, PUC Goiás (CEAD), 2026.
 Aluno: **João Victor Diamantino Cardoso**
 
-Sistema web para a equipe da **CV Administradora de Obras Ltda. (CV ADM)** e da imobiliária 1001 organizarem, distribuírem e acompanharem as tarefas e os projetos internos da empresa.
+Sistema web para a equipe da **TR Enterprises Ltda. (1001 Negócios Imobiliários)** organizarem, distribuírem e acompanharem as tarefas e os projetos internos da empresa.
 
 - **Sistema online:** https://dimasaas.github.io/pi-3b-gerenciador-de-tarefas/
 - **Gestão do projeto (GitHub Projects):** https://github.com/users/Dimasaas/projects/2

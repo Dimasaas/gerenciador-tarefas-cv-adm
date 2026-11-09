@@ -36,7 +36,7 @@ function authView() {
   const reg = state.authMode === 'register';
   return `<div class="box auth">
     <h1>${reg ? 'Criar conta' : 'Entrar'}</h1>
-    <p class="muted">Gerenciador de Tarefas Online — CV ADM</p>
+    <p class="muted">Gerenciador de Tarefas Online — TR Enterprises</p>
     <form data-form="${reg ? 'register' : 'login'}">
       ${reg ? '<label>Nome <input name="name" required></label>' : ''}
       <label>E-mail <input name="email" type="email" required></label>
